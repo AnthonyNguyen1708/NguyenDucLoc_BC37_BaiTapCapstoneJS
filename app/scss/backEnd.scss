@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  .spinner {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    overflow: hidden;
+    position: fixed;
+    .lds-spinner {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+    }
+  }
+
+  .tblNguoiDung {
+    .table {
+      tbody {
+        tr {
+          .id {
+            width: 5%;
+          }
+          .name {
+            text-align: center;
+            width: 20%;
+          }
+          .price {
+            text-align: center;
+            width: 10%;
+          }
+          .img {
+            width: 25%;
+
+            img {
+              height: 250px;
+              padding-left: 15%;
+            }
+          }
+          .about {
+            width: 35%;
+          }
+          .action_btn {
+            width: 5%;
+          }
+        }
+      }
+    }
+  }
+}
