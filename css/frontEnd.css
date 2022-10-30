@@ -8,7 +8,7 @@
 .banner {
   position: relative;
   height: 120vh;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(to left, #8942a8, #ba382f);
   overflow: hidden;
 }
@@ -39,7 +39,7 @@
 .banner .header {
   background: linear-gradient(to left, #8942a8, #ba382f);
   z-index: 2;
-  width: 100vw;
+  width: 100%;
 }
 .banner .header .container .header_content a {
   text-decoration: none;
@@ -251,18 +251,20 @@
 }
 .banner .cart .cart_content {
   position: absolute;
+  top: 5%;
   background: #010101;
   opacity: 0.95;
-  height: 100%;
-  width: 60%;
+  height: 60%;
+  width: 50%;
   flex-direction: column;
-  top: 0;
   right: -100%;
   z-index: 3;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 1s;
   right: -100%;
   color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 .banner .cart .cart_content .cart_header button {
   border: none;
