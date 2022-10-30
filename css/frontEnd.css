@@ -10,6 +10,7 @@
   height: 120vh;
   width: 100vw;
   background: linear-gradient(to left, #8942a8, #ba382f);
+  overflow: hidden;
 }
 .banner .spinner {
   position: absolute;
