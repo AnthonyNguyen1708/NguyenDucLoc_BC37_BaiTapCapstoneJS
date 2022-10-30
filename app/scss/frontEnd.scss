@@ -43,11 +43,14 @@
 
     .container {
       .header_content {
-        .shop_name {
-          color: white;
-          padding-top: 0.3%;
-          line-height: 2rem;
-          font-weight: 900;
+        a {
+          text-decoration: none;
+          .shop_name {
+            color: white;
+            line-height: 2rem;
+            font-weight: 900;
+            text-transform: capitalize;
+          }
         }
 
         .search {

@@ -41,11 +41,14 @@
   position: fixed;
   z-index: 2;
 }
-.banner .header .container .header_content .shop_name {
+.banner .header .container .header_content a {
+  text-decoration: none;
+}
+.banner .header .container .header_content a .shop_name {
   color: white;
-  padding-top: 0.3%;
   line-height: 2rem;
   font-weight: 900;
+  text-transform: capitalize;
 }
 .banner .header .container .header_content .search {
   border: 1px solid #4d4b4b;

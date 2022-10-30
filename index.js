@@ -1,5 +1,5 @@
-import { CartItem } from "../models/cartItem.js";
-import { spinnerService } from "../services/spinnerService.js";
+import { CartItem } from "./app/models/cartItem.js";
+import { spinnerService } from "./app/services/spinnerService.js";
 
 let productList = [];
 
