@@ -1,5 +1,4 @@
 function regexRequired(value, selectorError, name) {
-  console.log(selectorError);
   if (value === "") {
     document.querySelector(selectorError).innerHTML =
       name + " không được bỏ trống!";
@@ -30,4 +29,15 @@ function regexIdNumber(value, selectorError, name) {
   document.querySelector(selectorError).innerHTML = name + " phải là số!";
   document.querySelector(selectorError).style.display = "block";
   return false;
+}
+
+function regexNumberValue(value, selectorError, name, minValue) {
+  if ( Number(value) < minValue) {
+    document.querySelector(selectorError).innerHTML =
+      name + " phải có giá trị từ " + minValue;
+    document.querySelector(selectorError).style.display = "block";
+    return false;
+  }
+  document.querySelector(selectorError).innerHTML = "";
+  return true;
 }

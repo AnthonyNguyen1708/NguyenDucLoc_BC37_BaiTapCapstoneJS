@@ -1,6 +1,8 @@
 let productList = [];
 
 let addProduct = () => {
+  if (!validateForm()) return;
+
   loadingService.loadingOn();
 
   let name = document.getElementById("name").value;
@@ -193,4 +195,40 @@ let updateProductInfo = () => {
 
 window.onload = () => {
   getProduct();
+};
+
+let validateForm = () => {
+  let name = document.getElementById("name").value;
+  let price = document.getElementById("price").value;
+  let screen = document.getElementById("screen").value;
+  let backCamera = document.getElementById("backCamera").value;
+  let frontCamera = document.getElementById("frontCamera").value;
+  let img = document.getElementById("img").value;
+  let des = document.getElementById("des").value;
+  let type = document.getElementById("type").value;
+
+  let valid = true;
+
+  valid &=
+    regexRequired(type, "#tb_brand", "Tên hãng") &&
+    regexLetter(type, "#tb_brand", "Tên hãng");
+
+  valid &= regexRequired(name, "#tb_name", "Tên sản phảm");
+
+  valid &=
+    regexRequired(price, "#tb_price", "Giá sản phảm") &&
+    regexIdNumber(price, "#tb_price", "Giá sản phảm") &&
+    regexNumberValue(price, "#tb_price", "Giá sản phảm", 100);
+
+  valid &= regexRequired(screen, "#tb_screen", "Kích cỡ màng hình");
+
+  valid &= regexRequired(backCamera, "#tb_backCam", "Thông số camera");
+
+  valid &= regexRequired(frontCamera, "#tb_froCam", "Thông số camera");
+
+  valid &= regexRequired(img, "#tb_img", "Hình ảnh sản phảm");
+
+  valid &= regexRequired(des, "#tb_des", "Mô tả sản phảm");
+
+  return valid;
 };

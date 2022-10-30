@@ -45,4 +45,8 @@ body .tblNguoiDung .table tbody tr .about {
 }
 body .tblNguoiDung .table tbody tr .action_btn {
   width: 5%;
+}
+body .modal-body .tb {
+  color: red;
+  margin-left: 20px;
 }/*# sourceMappingURL=backEnd.css.map */

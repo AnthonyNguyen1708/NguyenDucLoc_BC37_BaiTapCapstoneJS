@@ -174,6 +174,7 @@
                     class="form-control"
                     placeholder="Input product's brand"
                   />
+                  <span id="tb_brand" class="tb"></span>
                 </div>
                 <div class="form-group">
                   <label>Name</label>
@@ -182,6 +183,7 @@
                     class="form-control"
                     placeholder="Input product's name"
                   />
+                  <span id="tb_name" class="tb"></span>
                 </div>
                 <div class="form-group">
                   <label>Price</label>
@@ -190,6 +192,7 @@
                     class="form-control"
                     placeholder="Input product's price"
                   />
+                  <span id="tb_price" class="tb"></span>
                 </div>
                 <div class="form-group">
                   <label>Screen</label>
@@ -198,6 +201,7 @@
                     class="form-control"
                     placeholder="Input product's screen size"
                   />
+                  <span id="tb_screen" class="tb"></span>
                 </div>
                 <div class="form-group">
                   <label>Back camera</label>
@@ -206,6 +210,7 @@
                     class="form-control"
                     placeholder="Input product's camera info"
                   />
+                  <span id="tb_backCam" class="tb"></span>
                 </div>
                 <div class="form-group">
                   <label>Front camera</label>
@@ -214,6 +219,7 @@
                     class="form-control"
                     placeholder="Input product's camera info"
                   />
+                  <span id="tb_froCam" class="tb"></span>
                 </div>
                 <div class="form-group">
                   <label>Hình Ảnh</label>
@@ -222,6 +228,7 @@
                     class="form-control"
                     placeholder="Input product's image link"
                   />
+                  <span id="tb_img" class="tb"></span>
                 </div>
                 <div class="form-group">
                   <label>Mô tả</label>
@@ -233,6 +240,7 @@
                     class="form-control"
                     placeholder="Input product's describe"
                   ></textarea>
+                  <span id="tb_des" class="tb"></span>
                 </div>
               </form>
             </div>
@@ -244,7 +252,6 @@
                     type="button"
                     onclick="addProduct()"
                     class="btn btn-success"
-                    data-dismiss="modal"
                   >
                     Add product
                   </button>
@@ -302,5 +309,6 @@
     <script src="../models/product.js"></script>
     <script src="../services/loadingService.js"></script>
     <script src="../services/productService.js"></script>
+    <script src="../services/validationService.js"></script>
   </body>
 </html>
